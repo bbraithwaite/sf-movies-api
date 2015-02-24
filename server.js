@@ -1,5 +1,9 @@
 'use strict';
 
+/**
+ * Module dependencies.
+ */
+
 var restify = require('restify');
 var port = (process.env.PORT || 5000);
 
@@ -7,7 +11,7 @@ var port = (process.env.PORT || 5000);
  * Create server object.
  **/
 var server = restify.createServer({
-  name: 'SFMovies'
+  name: 'sf-movies-api'
 });
 
 /**
