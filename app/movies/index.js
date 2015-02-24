@@ -13,7 +13,7 @@ var search = require('./search');
  */
 
 module.exports = function(server) {
-	server.get('/movies/content', content);
-	server.get('/movies/locations', locations);
-	server.get('/movies/search', search);
+	server.get('/movies/content', content.get);
+	server.get('/movies/locations', locations.get);
+	server.get('/movies/search', search.get);
 };
