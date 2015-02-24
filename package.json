@@ -4,7 +4,7 @@
   "description": "San Francisco Movies JSON API.",
   "scripts": {
     "lint": "jshint .",
-    "dev-start": "nodemon server.js",
+    "dev": "nodemon server.js",
     "start": "node server.js",
     "test": "mocha --recursive -R spec"
   },
@@ -20,6 +20,7 @@
   "license": "ISC",
   "homepage": "https://github.com/bbraithwaite/sf-movies-api",
   "dependencies": {
+    "sf-movies-logic": "git+https://github.com/bbraithwaite/sf-movies-logic",
     "restify": "^2.8.5"
   },
   "devDependencies": {
