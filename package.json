@@ -1,0 +1,32 @@
+{
+  "name": "sf-movies-api",
+  "version": "1.0.0",
+  "description": "San Francisco Movies JSON API.",
+  "scripts": {
+    "lint": "jshint .",
+    "dev-start": "nodemon server.js",
+    "start": "node server.js",
+    "test": "mocha --recursive -R spec"
+  },
+  "pre-commit": [
+    "test",
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbraithwaite/sf-movies-api.git"
+  },
+  "author": "https://github.com/bbraithwaite",
+  "license": "ISC",
+  "homepage": "https://github.com/bbraithwaite/sf-movies-api",
+  "dependencies": {
+    "restify": "^2.8.5"
+  },
+  "devDependencies": {
+    "jshint": "^2.6.0",
+    "mocha": "^2.1.0",
+    "nodemon": "^1.3.7",
+    "pre-commit": "^1.0.4",
+    "should": "^5.0.1"
+  }
+}
