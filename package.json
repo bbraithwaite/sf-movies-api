@@ -1,11 +1,12 @@
 {
   "name": "sf-movies-api",
+  "private": true,
   "version": "1.0.0",
   "description": "San Francisco Movies JSON API.",
   "scripts": {
     "lint": "jshint .",
-    "dev": "nodemon server.js",
     "start": "node server.js",
+    "dev": "nodemon",
     "test": "mocha --recursive -R spec"
   },
   "pre-commit": [

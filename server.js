@@ -5,13 +5,15 @@
  */
 
 var restify = require('restify');
+var packageConfig = require('./package');
 var port = (process.env.PORT || 5000);
 
 /**
  * Create server object.
  **/
 var server = restify.createServer({
-  name: 'sf-movies-api'
+  name: packageConfig.name,
+  version: packageConfig.version
 });
 
 /**
