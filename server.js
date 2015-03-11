@@ -17,14 +17,9 @@ var server = restify.createServer({
 });
 
 /**
- * Register Middleware.
+ * Register app specific routes.
  **/
-server.use(restify.CORS());
-
-/**
- * Register api modules.
- **/
-require('./app/movies')(server);
+require('./application')(server);
 
 /**
  * Start listening on server.
